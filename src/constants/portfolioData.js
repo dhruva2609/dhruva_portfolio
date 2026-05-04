@@ -8,7 +8,7 @@ export const SECTIONS = [
   'about',
   'skills',
   'projects',
-  'projects-2',   // extra scroll room — remove if projects fit in one screen
+  'projects-2',
   'blog',
   'contact',
 ];
@@ -92,6 +92,11 @@ export const portfolioData = {
   ],
   blogs: [
     {
+      title: "Developed a production-ready Manga reader using the MangaDex API and a custom proxy to bypass regional restrictions and resolve image loading issues.",
+      date: "May 2026",
+      link: "https://www.linkedin.com/posts/pandyadhruva_mangareader-webdevelopment-reactjs-ugcPost-7457052686774050816-IAZs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWuP8UB8wjdAidQgnFJ_accUsjkZxdgaRY"
+    },
+    {
       title: "Led the development team to architect the Udaan'26 platform, delivering secure voting and encrypted attendance for 1,500+ users.",
       date: "Feb 2026",
       link: 'https://www.linkedin.com/posts/pandyadhruva_udaan26-redcarpet-bvm-ugcPost-7432792325652791297-zen0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWuP8UB8wjdAidQgnFJ_accUsjkZxdgaRY'
@@ -106,6 +111,7 @@ export const portfolioData = {
   socials: {
     github: "github.com/dhruva2609",
     linkedin: "linkedin.com/in/dhruva-pandya-145618287",
+    leetcode: "leetcode.com/u/dhruva26",
     email: "pandyadhruva09@gmail.com"
   }
 };

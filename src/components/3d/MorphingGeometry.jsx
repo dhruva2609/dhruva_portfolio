@@ -5,8 +5,8 @@ import * as THREE from 'three';
 import { hoverState } from './sharedRefs';
 
 function buildGeometry() {
-  const indexed = new THREE.IcosahedronGeometry(1.2, 0); // Slightly larger for better impact
-  const geo = indexed.toNonIndexed();
+  const indexed = new THREE.IcosahedronGeometry(1.2, 0); 
+  const geo = indexed.index ? indexed.toNonIndexed() : indexed;
   geo.computeVertexNormals();
 
   const position = geo.attributes.position;

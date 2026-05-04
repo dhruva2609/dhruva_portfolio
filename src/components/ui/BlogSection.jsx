@@ -14,7 +14,7 @@ const containerVariant = {
 
 export default function BlogSection() {
   return (
-    <div className="w-screen h-screen flex flex-col items-start justify-center px-[8%] md:px-[12%] font-['Inter']">
+    <div className="w-screen min-h-screen flex flex-col items-start justify-start md:justify-center px-[8%] md:px-[12%] pt-20 md:pt-0 font-['Inter']">
       <div className="w-full md:w-[50%]">
         <motion.p
           initial={{ opacity: 0, x: -20 }}
@@ -30,7 +30,7 @@ export default function BlogSection() {
           text="Recent Writings"
           tag="h2"
           once={false}
-          className="text-5xl md:text-7xl font-extrabold tracking-tighter text-white mb-10 block"
+          className="text-3xl md:text-7xl font-extrabold tracking-tighter text-white mb-10 block"
         />
 
         <motion.div

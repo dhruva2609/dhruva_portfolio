@@ -10,7 +10,7 @@ const lineVariant = {
 
 export default function AboutSection() {
   return (
-    <div className="w-screen h-screen flex flex-col justify-center px-[8%] md:px-[12%] font-['Inter'] relative pointer-events-none">
+    <div className="w-screen min-h-screen flex flex-col justify-start md:justify-center px-[8%] md:px-[12%] pt-20 md:pt-0 font-['Inter'] relative pointer-events-none">
       <div className="w-full md:w-[48%] pointer-events-auto">
         <motion.div
           initial={{ opacity: 0, x: -60, filter: 'blur(12px)' }}
@@ -33,7 +33,7 @@ export default function AboutSection() {
             text="About Me"
             tag="h2"
             once={false}
-            className="text-5xl md:text-7xl font-extrabold tracking-tighter text-white mb-6 block"
+            className="text-3xl md:text-7xl font-extrabold tracking-tighter text-white mb-6 block"
           />
 
           {/* Accent line */}

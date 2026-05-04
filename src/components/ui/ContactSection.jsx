@@ -5,7 +5,7 @@ import { portfolioData } from '../../constants/portfolioData';
 
 export default function ContactSection() {
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center text-center px-[8%] md:px-[12%] font-['Inter'] pointer-events-none">
+    <div className="w-screen min-h-screen flex flex-col items-center justify-start md:justify-center text-center px-[8%] md:px-[12%] pt-20 md:py-0 font-['Inter'] pointer-events-none">
       <div className="pointer-events-auto w-full max-w-4xl">
         <motion.div
           initial={{ opacity: 0, scale: 0.88, filter: 'blur(16px)' }}
@@ -13,7 +13,7 @@ export default function ContactSection() {
           transition={{ duration: 1, ease: [0.25, 0.46, 0.45, 0.94] }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <GlassCard className="flex flex-col items-center p-10 md:p-16 relative overflow-hidden">
+          <GlassCard className="flex flex-col items-center p-6 md:p-16 relative overflow-hidden">
             {/* Ambient glow orb behind card */}
             <div className="absolute inset-0 bg-gradient-radial from-blue-600/15 via-transparent to-transparent pointer-events-none" />
 
@@ -31,7 +31,7 @@ export default function ContactSection() {
               text="Let's Connect"
               tag="h2"
               once={false}
-              className="text-5xl md:text-7xl font-extrabold tracking-tighter text-white mb-6 block relative z-10"
+              className="text-3xl md:text-7xl font-extrabold tracking-tighter text-white mb-6 block relative z-10"
             />
 
             <motion.p
@@ -74,6 +74,13 @@ export default function ContactSection() {
                 className="px-8 py-4 rounded-full bg-blue-600 text-white font-bold tracking-widest text-xs uppercase hover:bg-blue-500 transition-all shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:shadow-[0_0_50px_rgba(59,130,246,0.7)]"
               >
                 LinkedIn
+              </a>
+              <a
+                href={`https://${portfolioData.socials.leetcode}`}
+                target="_blank" rel="noreferrer"
+                className="px-8 py-4 rounded-full bg-white/8 border border-white/15 text-white font-bold tracking-widest text-xs uppercase hover:bg-white/20 transition-all backdrop-blur-sm"
+              >
+                LeetCode
               </a>
               <a
                 href={`mailto:${portfolioData.socials.email}`}

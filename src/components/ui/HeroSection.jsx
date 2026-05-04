@@ -59,7 +59,7 @@ export default function HeroSection() {
         </motion.div>
 
         {/* ── Name — Dhruva Pandya — Elite Glitch Blur ── */}
-        <LetterGlitch text="Dhruva Pandya" className="text-white text-7xl md:text-[8rem] lg:text-[10.5rem] font-black tracking-tighter mb-4 leading-none" />
+        <LetterGlitch text="Dhruva Pandya" className="text-white text-3xl sm:text-5xl md:text-[8rem] lg:text-[10.5rem] font-black tracking-tighter mb-4 leading-none" />
 
         {/* ── Role ── */}
         <motion.p
