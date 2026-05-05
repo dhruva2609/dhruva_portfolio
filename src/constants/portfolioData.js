@@ -52,7 +52,7 @@ export const portfolioData = {
       desc: "Full-stack event management platform supporting 1,500+ concurrent users. Features AES-256-GCM encrypted QR codes for tamper-proof attendance and a RedCarpet voting system built on atomic database operations for perfect vote consistency.",
       stack: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Railway', 'Cloudinary'],
       highlight: '1,500+ concurrent users',
-      link: '#',
+      link: 'https://bvmtechfest.up.railway.app/',
     },
     {
       name: "KnowHow'26",
@@ -73,7 +73,7 @@ export const portfolioData = {
       desc: 'A freelancing platform connecting clients and freelancers for projects, collaboration, and secure transactions. Features real-time chat, project bidding, and role-based access.',
       stack: ['React', 'Node.js', 'MongoDB'],
       highlight: null,
-      link: '#',
+      link: 'https://github.com/dhruva2609/FreelanceHub',
     },
     {
       name: 'Sahil Foods',
