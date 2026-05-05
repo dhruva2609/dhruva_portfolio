@@ -78,7 +78,7 @@ export const portfolioData = {
     {
       name: 'Sahil Foods',
       desc: 'A single-page website for a local bakery, showcasing products, menu, and contact information. Features smooth scrolling and an animated menu.',
-      stack: ['React', 'CSS'],
+      stack: ['HTML', 'CSS'],
       highlight: null,
       link: 'https://sahil-foods.vercel.app/',
     },
