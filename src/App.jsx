@@ -5,30 +5,44 @@ import Scene from './components/3d/Scene';
 import Hero from './components/ui/Hero';
 
 export default function App() {
-  const [totalPages, setTotalPages] = useState(7);
+  const [totalPages, setTotalPages] = useState(6);
 
-  // Industry-grade solution: Measure actual DOM height after render
+  // Industry-grade measurement: bypass ScrollControls container constraints
+  // by measuring the exact rendered height of each section component.
   useLayoutEffect(() => {
     const measure = () => {
       const content = document.querySelector('.scroll-content-wrapper');
       if (content) {
         const height = content.scrollHeight;
         const vh = window.innerHeight;
-
-        // Exact measurement: each section is min-h-screen, so height/vh = exact pages.
-        // No buffer needed since sections fill full viewport height.
-        const pages = height / vh;
-        setTotalPages(Math.max(1, pages));
+        
+        // Exact calculation of pages needed for the content.
+        // We add a tiny buffer (0.01) to account for subpixel rendering 
+        // to prevent absolute cutoff at the very last pixel.
+        const calculatedPages = (height / vh) + 0.01;
+        
+        setTotalPages(prev => {
+          if (Math.abs(prev - calculatedPages) > 0.05) {
+            return calculatedPages;
+          }
+          return prev;
+        });
       }
     };
 
-    measure();
+    // Delay initial measurement slightly to ensure DOM paints fully
+    const timer = setTimeout(measure, 100);
+    
     const observer = new ResizeObserver(measure);
     const content = document.querySelector('.scroll-content-wrapper');
-    if (content) observer.observe(content);
+    if (content) {
+      // Observe all individual sections since they dictate the height
+      Array.from(content.children).forEach(child => observer.observe(child));
+    }
 
     window.addEventListener('resize', measure);
     return () => {
+      clearTimeout(timer);
       observer.disconnect();
       window.removeEventListener('resize', measure);
     };
@@ -43,7 +57,6 @@ export default function App() {
         dpr={[1, 1.5]}
       >
         <ScrollControls
-          key={Math.round(totalPages * 10)}
           pages={totalPages}
           damping={0.2}
         >
