@@ -45,7 +45,7 @@ const LinkedinIcon = ({ size = 24, className = "" }) => (
 
 export default function ContactSection() {
   return (
-    <div className="w-screen min-h-[80vh] flex flex-col items-center justify-start md:justify-center text-center px-[8%] md:px-[12%] pt-20 md:py-0 font-['Inter'] pointer-events-none">
+    <div className="w-screen min-h-screen flex flex-col items-center justify-center text-center px-[8%] md:px-[12%] font-['Inter'] pointer-events-none">
       <div className="pointer-events-auto w-full max-w-4xl">
         <motion.div
           initial={{ opacity: 0, scale: 0.88, filter: 'blur(16px)' }}

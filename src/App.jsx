@@ -14,9 +14,11 @@ export default function App() {
       if (content) {
         const height = content.scrollHeight;
         const vh = window.innerHeight;
-        // Use a minimal offset (0.05) to ensure content is NEVER cut off while minimizing dead space
-        const exactPages = Math.max(1, Number(((height / vh) - 0.05).toFixed(2)));
-        setTotalPages(exactPages);
+
+        // Exact measurement: each section is min-h-screen, so height/vh = exact pages.
+        // No buffer needed since sections fill full viewport height.
+        const pages = height / vh;
+        setTotalPages(Math.max(1, pages));
       }
     };
 
