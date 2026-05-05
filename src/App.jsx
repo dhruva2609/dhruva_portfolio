@@ -14,8 +14,8 @@ export default function App() {
       if (content) {
         const height = content.scrollHeight;
         const vh = window.innerHeight;
-        // Calculate exact pages needed
-        const exactPages = height / vh;
+        // Use a minimal offset (0.05) to ensure content is NEVER cut off while minimizing dead space
+        const exactPages = Math.max(1, Number(((height / vh) - 0.05).toFixed(2)));
         setTotalPages(exactPages);
       }
     };
@@ -24,7 +24,7 @@ export default function App() {
     const observer = new ResizeObserver(measure);
     const content = document.querySelector('.scroll-content-wrapper');
     if (content) observer.observe(content);
-    
+
     window.addEventListener('resize', measure);
     return () => {
       observer.disconnect();
