@@ -71,7 +71,7 @@ export const portfolioData = {
     {
       name: 'FreelanceHub',
       desc: 'A freelancing platform connecting clients and freelancers for projects, collaboration, and secure transactions. Features real-time chat, project bidding, and role-based access.',
-      stack: ['React', 'Node.js', 'MongoDB'],
+      stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
       highlight: null,
       link: 'https://github.com/dhruva2609/FreelanceHub',
     },
