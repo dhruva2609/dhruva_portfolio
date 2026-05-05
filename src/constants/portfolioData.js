@@ -57,7 +57,7 @@ export const portfolioData = {
     {
       name: "KnowHow'26",
       desc: "Flagship event registration platform handling 55,000+ requests from 1,050+ users with high availability. Includes automated registration workflows and a real-time analytics dashboard for live event insights.",
-      stack: ['React.js', 'Node.js', 'MongoDB', 'Vercel', 'Render'],
+      stack: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Vercel', 'Cloudinary'],
       highlight: '55,000+ requests served',
       link: 'https://knowhow2k26.vercel.app/',
     },
@@ -78,7 +78,7 @@ export const portfolioData = {
     {
       name: 'Sahil Foods',
       desc: 'A single-page website for a local bakery, showcasing products, menu, and contact information. Features smooth scrolling and an animated menu.',
-      stack: ['HTML', 'CSS'],
+      stack: ['HTML', 'CSS', 'JavaScript'],
       highlight: null,
       link: 'https://sahil-foods.vercel.app/',
     },
