@@ -45,7 +45,7 @@ function LetterGlitch({ text, className }) {
 
 export default function HeroSection() {
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center text-center px-4 font-['Inter'] relative z-50">
+    <div className="w-screen h-[100dvh] flex flex-col items-center justify-center text-center px-4 font-['Inter'] relative z-50">
       <div className="flex flex-col items-center max-w-7xl relative md:translate-y-6">
         {/* ── Badge ── */}
         <motion.div

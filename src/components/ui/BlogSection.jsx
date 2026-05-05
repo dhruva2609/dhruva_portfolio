@@ -14,7 +14,7 @@ const containerVariant = {
 
 export default function BlogSection() {
   return (
-    <div className="w-screen min-h-screen flex flex-col items-start justify-start md:justify-center px-[8%] md:px-[12%] pt-20 md:pt-0 font-['Inter']">
+    <div className="w-screen min-h-[100dvh] flex flex-col items-start justify-start md:justify-center px-[8%] md:px-[12%] pt-20 md:pt-0 font-['Inter']">
       <div className="w-full md:w-[50%]">
         <motion.p
           initial={{ opacity: 0, x: -20 }}

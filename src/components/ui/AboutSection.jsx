@@ -10,7 +10,7 @@ const lineVariant = {
 
 export default function AboutSection() {
   return (
-    <div className="w-screen min-h-screen flex flex-col justify-start md:justify-center px-[8%] md:px-[12%] pt-20 md:pt-0 font-['Inter'] relative pointer-events-none">
+    <div className="w-screen min-h-[100dvh] flex flex-col justify-start md:justify-center px-[8%] md:px-[12%] pt-20 md:pt-0 font-['Inter'] relative pointer-events-none">
       <div className="w-full md:w-[48%] pointer-events-auto">
         <motion.div
           initial={{ opacity: 0, x: -60, filter: 'blur(12px)' }}

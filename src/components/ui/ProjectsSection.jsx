@@ -31,7 +31,7 @@ export default function ProjectsSection() {
   const regular = portfolioData.projects.slice(2);
 
   return (
-    <div className="w-screen min-h-screen flex flex-col items-center justify-start md:justify-center px-4 md:px-[8%] py-16 md:py-20 font-['Inter'] pointer-events-none relative z-10">
+    <div className="w-screen min-h-[100dvh] flex flex-col items-center justify-start md:justify-center px-4 md:px-[8%] py-16 md:py-20 font-['Inter'] pointer-events-none relative z-10">
       <div className="pointer-events-auto w-full max-w-7xl">
         {/* Heading */}
         <div className="mb-10 flex items-end justify-between">
